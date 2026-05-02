@@ -1,4 +1,4 @@
-"""# MNIST Image Recognition Experiments
+# MNIST Image Recognition Experiments
 
 A simple PyTorch project comparing three neural network architectures (MLP, CNN, and a Mini Vision Transformer) on the MNIST handwritten digit dataset, with and without data augmentation.
 
