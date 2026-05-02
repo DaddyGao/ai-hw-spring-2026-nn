@@ -15,6 +15,7 @@ source .venv/bin/activate
 
 # 3. Install required libraries
 pip install torch torchvision
+```
 
 ## Experiments Results
 
