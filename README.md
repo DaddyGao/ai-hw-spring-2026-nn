@@ -45,7 +45,7 @@ Training MiniViT...
 MiniViT Results -> Test Loss: 0.0834, Test Accuracy: 97.41% (Time: 87.1s)
 ```
 
-## Analysis
+## Demo
 
 ### The Contenders
 * **MLP (Multi-Layer Perceptron):** The baseline. Flattens the image into a 1D array.
