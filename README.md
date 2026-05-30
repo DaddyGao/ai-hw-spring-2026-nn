@@ -71,10 +71,9 @@ MiniViT Results -> Test Loss: 0.0834, Test Accuracy: 97.41% (Time: 87.1s)
 * **MLP:** 97.59% -> 97.47%
 * **CNN:** 98.97% -> 98.85%
 * **MiniViT:** 97.51% -> 97.41%
-* *Highlight Question:* "Why did accuracy drop?"
 
 **Notes:**
-> Next, I applied data augmentation—randomly rotating and shifting the training images to make the models more robust. But the results were surprising. Across the board, accuracy actually went *down* slightly, and training time went up significantly by about 10 to 15 seconds per model. 
+> Next, I applied data augmentation—randomly rotating and shifting the training images to make the models more robust. Across the board, accuracy actually went *down* slightly, and training time went up by about 10 to 15 seconds per model. 
 >
 > Why did this happen? It comes down to training duration and dataset distribution. First, augmentation makes the training task much harder. Because I only trained for 5 epochs, the models didn't have enough time to fully converge on this harder task. If we ran this for 50 epochs, the augmented models would likely pull ahead. Second, the standard MNIST training set is identical to the test set—perfectly centered digits. By augmenting the training data, we actually pushed the training distribution slightly away from the test distribution in the short term.
 
