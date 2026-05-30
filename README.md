@@ -47,7 +47,7 @@ MiniViT Results -> Test Loss: 0.0834, Test Accuracy: 97.41% (Time: 87.1s)
 
 ## Demo
 
-### The Contenders
+### 1. The Contenders
 * **MLP (Multi-Layer Perceptron):** The baseline. Flattens the image into a 1D array.
 * **CNN (Convolutional Neural Net):** The vision specialist. Uses 2D sliding filters.
 * **MiniViT (Vision Transformer):** The modern approach. Treats the image as a sequence of "patches."
@@ -57,7 +57,7 @@ MiniViT Results -> Test Loss: 0.0834, Test Accuracy: 97.41% (Time: 87.1s)
 
 ---
 
-### The Results - Standard Data
+### 2. The Results - Standard Data
 * **MLP:** 97.59% (14.4s)
 * **CNN:** **98.97%** (68.2s)
 * **MiniViT:** 97.51% (79.0s)
@@ -67,7 +67,7 @@ MiniViT Results -> Test Loss: 0.0834, Test Accuracy: 97.41% (Time: 87.1s)
 
 ---
 
-### Analysis - The Augmentation Paradox
+### 3. Analysis - The Augmentation Paradox
 * **MLP:** 97.59% -> 97.47%
 * **CNN:** 98.97% -> 98.85%
 * **MiniViT:** 97.51% -> 97.41%
@@ -80,7 +80,7 @@ MiniViT Results -> Test Loss: 0.0834, Test Accuracy: 97.41% (Time: 87.1s)
 
 ---
 
-### Conclusion & Takeaways
+### 4. Conclusion & Takeaways
 1. CNNs remain the most efficient architecture for small/medium image datasets.
 2. Transformers require more data and compute to show their true power.
 3. Data Augmentation requires longer training schedules to yield benefits.
